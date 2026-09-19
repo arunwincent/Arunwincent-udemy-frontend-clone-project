@@ -53,35 +53,35 @@ body{
 }
 .sale-image{
     display: flex;
-    justify-content: center; /* Centers the image horizontally */
+    justify-content: center; 
     width: 100%; 
 }
 .banner-img {
-    max-width: 100%;         /* Prevents the image from breaking layout on smaller screens */
+    max-width: 100%;         
     height: auto;
 }
 .banner-container {
-  position: relative;     /* CRUCIAL: Pins the box relative to this wrapper */
+  position: relative;    /
   width: 100%;
-  display: inline-block;  /* Keeps the container tightly hugging the image height */
+  display: inline-block;  
 }
 
-/* 3. Floating White Box */
+
 .learning-box {
-  position: absolute;     /* Removes the box from document flow to float it */
-  top: 50%;               /* Positions the top edge in the dead center vertically */
-  left: 10%;               /* Keeps it aligned to the left side with a safety margin */
-  transform: translateY(-205%); /* Pulls the box back up by half its height to perfect center */
+  position: absolute; 
+  top: 50%;      
+  left: 10%;        
+  transform: translateY(-205%); 
   
-  /* Styling and Dimensioning */
+
   background-color: #ffffff;
   padding: 24px;
-  width: 350px;           /* Set a explicit fixed width for the text card */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Floating card shadow styling */
-  z-index: 10;            /* Safety check: Ensures card stacks on top of the image */
+  width: 350px;         
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  z-index: 10;           
 }
 
-/* Typography elements */
+
 .learning-box h1 {
   font-family: Arial, sans-serif;
   font-size: 32px;
@@ -157,4 +157,103 @@ margin-top: 10px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+media (max-width: 768px) {
+    
+ 
+    .navbar__s2 {
+        display: none; 
+    }
+
+    .navbar__s3 p {
+        display: none; 
+    }
+
+    .cetegories {
+        justify-content: flex-start;
+        overflow-x: auto; 
+        gap: 12px;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .cetegories p {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .sale-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learning-box {
+        position: static; 
+        transform: none;  
+        width: auto;      
+        box-shadow: none; 
+        border-bottom: 1px solid #d1d7dc;
+        padding: 16px;
+    }
+
+    .learning-box h1 {
+        font-size: 22px; 
+    }
+
+    .learning-box p {
+        font-size: 14px;
+    }
+
+
+    .recommended__container, 
+    .popular__container {
+        justify-content: space-between;
+        gap: 15px 10px; 
+    }
+
+    .course-card {
+        width: calc(50% - 5px); 
+    }
+
+    .course-card img {
+        height: auto;
+    }
+
+
+    .topics__container p {
+        flex-basis: calc(50% - 15px); 
+        text-align: center;
+        font-size: 14px;
+    }
+
+    
+    .footer__one {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer__one p {
+        margin: 10px 0;
+    }
+    
+    .footer__two {
+        margin: 20px 0 0 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .course-card {
+        width: 100%; 
+    }
+    
+    .topics__container p {
+        flex-basis: 100%; 
+    }
 }
