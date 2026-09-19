@@ -70,7 +70,7 @@ body{
 .learning-box {
   position: absolute; 
   top: 50%;      
-  left: 10%;        
+  left: 120px;        
   transform: translateY(-205%); 
   
 
@@ -158,7 +158,7 @@ margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
-media (max-width: 768px) {
+@media (max-width: 768px) {
     
  
     .navbar__s2 {
