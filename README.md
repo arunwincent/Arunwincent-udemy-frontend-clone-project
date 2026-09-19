@@ -6,7 +6,7 @@
 A pixel-perfect, responsive frontend clone of the **Udemy homepage** built from scratch using pure **HTML5** and **CSS3**. I created this project to master advanced UI layouts, absolute-positioning layers, and modern semantic web styling.
 
 ## 🚀 Live Demo
-🔗 **[Insert your GitHub Pages live link here]**
+🔗 https://arunwincent.github.io/Arunwincent-udemy-frontend-clone-project/
 
 ---
 
