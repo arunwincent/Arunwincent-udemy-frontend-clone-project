@@ -4,6 +4,8 @@
 }
 body{
   font-family: "Gabarito", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 .navbar{
     padding: 10px;
@@ -71,7 +73,7 @@ body{
   position: absolute; 
   top: 50%;      
   left: 120px;        
-  transform: translateY(-205%); 
+  transform: translateY(-195%); 
   
 
   background-color: #ffffff;
@@ -160,6 +162,13 @@ margin-top: 10px;
 }
 @media (max-width: 768px) {
     
+    .navbar{
+        padding: 10px;
+        gap:5px;
+    }
+    .navbar__s1__title{
+        font-size: 20px;
+    }
  
     .navbar__s2 {
         display: none; 
@@ -223,7 +232,9 @@ margin-top: 10px;
     }
 
     .course-card img {
+        width: 100%;
         height: auto;
+        display: block;
     }
 
 
