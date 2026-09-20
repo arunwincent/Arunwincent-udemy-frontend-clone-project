@@ -57,6 +57,7 @@ body{
     display: flex;
     justify-content: center; 
     width: 100%; 
+    box-sizing: border-box;
 }
 .banner-img {
     max-width: 100%;         
@@ -66,19 +67,19 @@ body{
 .banner-container {
   position: relative;    /
   width: 100%;
+    mx-width: 1200px;
   display: flex; 
   align-items: center;
-    justify-content: flex-start;
 }
 
 
 .learning-box {
   position: absolute; 
-  left:5%
+  left:48px;
   background-color: #ffffff;
   padding: 24px;
-  width: 28%; 
-  min-width: 280px;
+  width: 380px; 
+  min-width: 48%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   z-index: 10;  
   box-sizing: border-box;
@@ -87,7 +88,7 @@ body{
 
 .learning-box h1 {
   font-family: Arial, sans-serif;
-  font-size: clamp(20px, 2vw, 32px;
+  font-size: clamp(20px, 2.5vw, 32px;
   font-weight: bold;
   color: #1c1d1f;
   margin-top: 0;
