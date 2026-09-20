@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
   font-family: "Gabarito", sans-serif;
@@ -53,12 +54,6 @@ body{
     padding: 10px;
     border-radius: 30px;
 }
-.sale-image{
-    display: flex;
-    justify-content: center; 
-    width: 100%; 
-    box-sizing: border-box;
-}
 .banner-img {
     max-width: 100%;         
     height: auto;
@@ -67,24 +62,20 @@ body{
 .banner-container {
   position: relative;    /
   width: 100%;
-    mx-width: 1200px;
-  display: flex; 
-  align-items: center;
+    mx-width: 100%;
+  display: block;    
 }
-
-
 .learning-box {
   position: absolute; 
-  left:48px;
+  top: 50%;
+  left: 48px;
+  transform: translateY(-50%); /* Clean positioning dynamic centering */
   background-color: #ffffff;
   padding: 24px;
   width: 380px; 
-  min-width: 48%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   z-index: 10;  
-  box-sizing: border-box;
 }
-
 
 .learning-box h1 {
   font-family: Arial, sans-serif;
@@ -166,8 +157,9 @@ margin-top: 10px;
     
     .navbar{
         padding: 10px;
-        gap:5px;
+        gap: 5px;
     }
+
     .navbar__s1__title{
         font-size: 20px;
     }
@@ -186,6 +178,7 @@ margin-top: 10px;
         gap: 12px;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px; 
     }
 
     .cetegories p {
@@ -193,25 +186,25 @@ margin-top: 10px;
         font-size: 14px;
     }
 
-    .sale-image img {
-        width: 100% !important; 
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
+    /* FIXED MOBILE BANNER FLOW */
     .banner-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Stacks the image and white box neatly */
+    }
+
+    .banner-img {
+        width: 100% !important;
+        height: auto !important;
     }
 
     .learning-box {
-        position: static; 
-        transform: none;  
-        width: auto;      
-        box-shadow: none; 
+        position: static !important; 
+        transform: none !important;  
+        width: 100% !important;      
+        box-shadow: none !important; 
         border-bottom: 1px solid #d1d7dc;
-        padding: 16px;
+        padding: 20px 15px !important;
+        background-color: #f8f9fa; /* Slightly off-white for a nice mobile section break */
     }
 
     .learning-box h1 {
@@ -221,7 +214,6 @@ margin-top: 10px;
     .learning-box p {
         font-size: 14px;
     }
-
 
     .recommended__container, 
     .popular__container {
@@ -239,13 +231,11 @@ margin-top: 10px;
         display: block;
     }
 
-
     .topics__container p {
         flex-basis: calc(50% - 15px); 
         text-align: center;
         font-size: 14px;
     }
-
     
     .footer__one {
         flex-direction: column;
@@ -261,7 +251,9 @@ margin-top: 10px;
     }
 }
 
-
+/* ==========================================================================
+   3. TINY SMARTPHONES STYLES (Under 480px)
+   ========================================================================== */
 @media (max-width: 480px) {
     .course-card {
         width: 100%; 
