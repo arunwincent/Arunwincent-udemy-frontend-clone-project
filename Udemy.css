@@ -1,12 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
   font-family: "Gabarito", sans-serif;
-  overflow-x: hidden;
-  width: 100%;
 }
 .navbar{
     padding: 10px;
@@ -23,9 +20,9 @@ body{
     padding: 10px;
     border: solid black 1px;
     border-radius: 30px;
-    width: 60%;
+    width: 50%;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
 }
 .navbar__s2 input{
@@ -54,44 +51,8 @@ body{
     padding: 10px;
     border-radius: 30px;
 }
-.banner-img {
-    max-width: 100%;         
-    height: auto;
-    display: block;
-}
-.banner-container {
-  position: relative;    /
-  width: 100%;
-    mx-width: 100%;
-  display: block;    
-}
-.learning-box {
-  position: absolute; 
-  top: 50%;
-  left: 48px;
-  transform: translateY(-50%); /* Clean positioning dynamic centering */
-  background-color: #ffffff;
-  padding: 24px;
-  width: 380px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  z-index: 10;  
-}
-
-.learning-box h1 {
-  font-family: Arial, sans-serif;
-  font-size: clamp(20px, 2.5vw, 32px;
-  font-weight: bold;
-  color: #1c1d1f;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.learning-box p {
-  font-family: Arial, sans-serif;
-  font-size: clamp(12px, 1.2vw, 16px);
-  line-height: 1.4;
-  color: #1c1d1f;
-  margin: 0;
+.sale-image img{
+    width: 100%; 
 }
 .recommended{
     padding: 10px;
@@ -127,9 +88,7 @@ margin-top: 10px;
     flex-grow: 1;
     flex-basis: 25%;
 }
-.popular{
-    padding: 10px;
-}.popular__container{
+.popular__container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
